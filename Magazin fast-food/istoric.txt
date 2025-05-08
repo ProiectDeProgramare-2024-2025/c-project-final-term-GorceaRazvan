@@ -1,0 +1,110 @@
+Zi 1
+1
+Burger
+10 10.30
+Zi 2
+1
+Burger
+10 10.30
+Zi 3
+2
+Burger
+10 10.30
+Burger
+10 10.30
+Zi 4
+1
+Burger
+10 10.30
+Zi 5
+1
+Burger
+10 10.30
+Zi 6
+1
+Burger
+10 10.30
+Zi 7
+3
+Burger
+10 10.30
+Burger
+10 10.30
+Burger
+10 10.30
+Zi 8
+0
+Zi 9
+0
+Zi 10
+0
+Zi 11
+1
+Burger
+10 10.30
+Zi 12
+0
+Zi 13
+0
+Zi 14
+0
+Zi 15
+0
+Zi 16
+0
+Zi 17
+1
+Pizza
+30 30.00
+Zi 18
+1
+Burger
+10 10.30
+Zi 19
+1
+Burger
+10 10.30
+Zi 20
+2
+Burger
+10 10.30
+Burger
+10 10.30
+Zi 21
+1
+Burger
+10 10.30
+Zi 22
+1
+Burger
+10 10.30
+Zi 23
+1
+Burger
+10 10.30
+Zi 24
+3
+Burger
+10 10.30
+Burger
+10 10.30
+Burger
+10 10.30
+Zi 25
+0
+Zi 26
+0
+Zi 27
+0
+Zi 28
+1
+Burger
+10 10.30
+Zi 29
+0
+Zi 30
+0
+Zi 31
+1
+Pizza
+20 30.30
