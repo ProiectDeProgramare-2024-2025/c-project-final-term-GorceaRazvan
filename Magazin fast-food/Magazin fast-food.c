@@ -25,14 +25,14 @@ void citire_fisier() {
         zile[j].nrzi[strcspn(zile[j].nrzi, "\n")] = '\0';
 
         if (fscanf(products_file, "%d", &zile[j].products_count) != 1) break;
-        fgetc(products_file); // consumă newline
+        fgetc(products_file);
 
         for (int i = 0; i < zile[j].products_count; i++) {
             if (!fgets(zile[j].produse[i].nume, 100, products_file)) break;
             zile[j].produse[i].nume[strcspn(zile[j].produse[i].nume, "\n")] = '\0';
 
             if (fscanf(products_file, "%d %lf", &zile[j].produse[i].cantitate, &zile[j].produse[i].pret) != 2) break;
-            fgetc(products_file); // consumă newline
+            fgetc(products_file);
         }
     }
     fclose(products_file);
@@ -48,7 +48,7 @@ void scriere_fisier() {
     char s[100];
     int c;
     double p;
-    while ((getchar()) != '\n'); // curăță bufferul
+    while ((getchar()) != '\n');
 
     printf("Introdu numele produsului: ");
     fgets(s, 100, stdin);
@@ -98,6 +98,7 @@ void istoric_zi_alegere() {
     printf("Precizeaza \033[1;36mziua\033[0m (1-31): ");
     int zi_curenta_alegere;
     scanf("%d", &zi_curenta_alegere);
+    if(zi_curenta_alegere>31 || zi_curenta_alegere<1) printf("\033[1;36mZiua\033[0m nu este in intervalul specificat\n");
     for (int j = 0; j < zile[zi_curenta_alegere - 1].products_count; j++) {
         printf("\033[1;36m%s\033[0m\n%d %.2f \033[1;37mRON\033[0m\n",
                zile[zi_curenta_alegere - 1].produse[j].nume,
@@ -182,8 +183,11 @@ void media_cantitatilor() {
 void alegere_zi() {
     printf("Alege \033[0;31mziua\033[0m (1-31): ");
     scanf("%d", &zi_curenta);
+    if(zi_curenta>31 || zi_curenta<1){ system("cls");printf("\033[1;33mZiua\033[0m nu este in intervalul precizat\n");}
+    else{
     system("cls");
     printf("Zi selectata cu succes.\n");
+    zi_curenta=1;}
 }
 
 int main() {
